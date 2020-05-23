@@ -31,7 +31,7 @@ class Formatter {
                 container.push(stringIntoArray[i]);
                 break;
               default:
-                container.push( this.capatilize(stringIntoArray[i]) ) ;
+                container.push( this.capitalize(stringIntoArray[i]) ) ;
                 break;
             };
          }  
