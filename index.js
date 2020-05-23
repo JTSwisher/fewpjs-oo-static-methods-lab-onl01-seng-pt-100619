@@ -13,13 +13,9 @@ class Formatter {
       let container = [];
       let stringIntoArray = string.split(' ')
 
-      function helper(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-      }
-
       for(let i = 0; i < stringIntoArray.length; i++) {
         if (i === 0) {
-          container.push( helper(stringIntoArray[i]) )
+          container.push( this.capitalize(stringIntoArray[i]) )
          } else {
             switch(stringIntoArray[i])  {
               case "the":
@@ -35,7 +31,7 @@ class Formatter {
                 container.push(stringIntoArray[i]);
                 break;
               default:
-                container.push( helper(stringIntoArray[i]) ) ;
+                container.push( this.capatilize(stringIntoArray[i]) ) ;
                 break;
             };
          }  
